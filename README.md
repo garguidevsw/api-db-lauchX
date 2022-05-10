@@ -12,7 +12,6 @@
     npm i -D eslint
    
 #### Agregar en package.json
-
     "scripts": {
         "test": "jest --verbose"
     }
@@ -21,7 +20,6 @@
     npm test filename.test.js
 
 #### Crear archivo de configuración de linter (.eslintrc.js)
-
     npm init @eslint/config
 
     module.exports = {
@@ -44,7 +42,6 @@
     };
 
 #### Agregar en package.json
-
     "scripts": {
         "test": "jest --verbose",
         "linter": "node ./node_modules/eslint/bin/eslint.js .",
@@ -52,8 +49,21 @@
     }
 
 #### Correr linter y corregir errores
-    
     npm run linter
     npm run linter-fix
     
+### EXPRESS
 
+    npm install express --save-dev
+
+### PRISMADB
+
+    npm install prisma --save-dev
+
+#### Inicializar prisma
+    npx prisma init
+
+
+#### Creación de base de datos
+
+    create database explorers_api;
