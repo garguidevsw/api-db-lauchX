@@ -4,6 +4,7 @@ module.exports = {
         "commonjs": true,
         "es2021": true,
         "jest": true,
+        "node": true,
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -13,6 +14,7 @@ module.exports = {
         indent: ["error", 4],
         "linebreak-style": ["error", "unix"],
         quotes: ["error", "double"],
-        semi: ["error", "always"]
+        semi: ["error", "always"],
+        "no-unused-vars": "off"
     }
 };
